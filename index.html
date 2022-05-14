@@ -42,11 +42,10 @@
     <div class="container">
         <div class="row bg-primary p-5">
             <div class="col-lg-6 mx-auto">
-                <p id="greeting" class="text-center text-light">Hi there <span></span></p>
-                <div class="input-group mb-3">
-                <span class="input-group-text">Name:</span>
-                <input id="inputUserName" type="text" class="form-control">
-                <button id= "showGreeting" class="btn btn-dark">Show Greeting</button>
+                <h4 id="greeting" class="text-center text-light">Hi there <span></span></h4>
+                <div class="input-group-lg text-center mb-3">
+                    <input id="inputUserName" type="text" placeholder="What's Your Name?" class="text-center form-control">
+                    <button id= "showGreeting" class="btn btn-dark">Show Greeting</button>
                 </div>
             </div>    
         </div>
@@ -96,10 +95,15 @@
             <div class="col-lg-6 mx-auto p-5">
                 <h3>Odd/Even</h3>
                 <p class="lead">Is the number <span id="oddEvenNumSpan"></span> even or odd? </p>
+                
+                <!-- Buttons -->
                 <button id="btnOdd" class="btn btn-outline-light">Odd</button>
-                <button id="btnNewNumber" class="btn btn-outline-light">New Number</button>
-
                 <button id="btnEven" class="btn btn-outline-light">Even</button>
+                <div class="container">
+                    <button id="btnNewNumber" class="btn btn-outline-light">New Number</button>
+                </div>
+
+                <!-- Result Messages -->
                 <div id="oddEvenCorrectResult" class="hidden alert alert-success mt-3">
                     <strong>That's Correct!</strong>
                 </div>
