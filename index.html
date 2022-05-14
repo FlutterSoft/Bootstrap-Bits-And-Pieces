@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="container bg-primary p-5">
+            <h1 class="text-light text-center">Bootstrap Bits & Pieces</h1>
+    </div>
+
+    <!-- First Row -->
+    <div class="container">
+        <div class="row text-center">
+            <!-- Simple Counter -->
+            <div class="col-6 text-light bg-dark p-5">
+                <h3>Simple Counter</h3>
+                <h4 id="counter"></h4>
+                <button id="lowerCounter" class="btn btn-danger">Lower</button>
+                <button id="raiseCounter" class="btn btn-primary">Raise</button>
+            </div>
+            <!-- LIST -->
+            <div class="col-6 bg-light p-5">
+                <ul class="list-group">
+                    <li class="list-group-item">Header <span class="badge rounded-pill bg-primary text-light">Passed</span></li>
+                    <li class="list-group-item">Number Counter <span class="badge rounded-pill bg-primary text-light">Passed </span>
+                    </li>
+                    <li class="list-group-item active">List <span class="badge rounded-pill bg-success text-light">Current</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 2ND ROW GREETING -->
+    <div class="container">
+        <div class="row bg-primary p-5">
+            <div class="col-6 mx-auto">
+                <p id="greeting" class="text-center text-light">Hi there <span></span></p>
+                <div class="input-group mb-3">
+                <span class="input-group-text">Name:</span>
+                <input id="inputUserName" type="text" class="form-control">
+                <button id= "showGreeting" class="btn btn-dark">Show Greeting</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <!-- 3RD ROW CAROUSEL -->
+    <div class="container">
+        <div class="row">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+          
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/wall-e1.jpg" alt="Los Angeles" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/wall-e2.jpg" alt="Chicago" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/wall-e3.jpg" alt="New York" class="d-block w-100">
+              </div>
+            </div>
+          
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- ODD/EVEN -->
+    <div class="container bg-dark">
+        <div class="row text-center p-5 text-light">
+            <div class="col-6 mx-auto p-5">
+                <h3>Odd/Even</h3>
+                <p class="lead">Is the number <span id="oddEvenNumSpan"></span> even or odd? </p>
+                <button id="btnOdd" class="btn btn-outline-light">Odd</button>
+                <button id="btnNewNumber" class="btn btn-outline-light">New Number</button>
+
+                <button id="btnEven" class="btn btn-outline-light">Even</button>
+                <div id="oddEvenCorrectResult" class="hidden alert alert-success mt-3">
+                    <strong>That's Correct!</strong>
+                </div>
+                <div id="oddEvenIncorrectResult"  class="hidden alert alert-danger mt-3">
+                    <strong>That's Incorrect Sorry!</strong>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
